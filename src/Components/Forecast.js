@@ -1,10 +1,10 @@
 import React from 'react';
 import Hero from './Hero';
 
-const Forecast = ({ weather }) => {
+const Forecast = ({ weatherData }) => {
   return (
     <div className='bg'>
-      <Hero weather={weather} />
+      <Hero weatherData={weatherData} />
     </div>
   );
 };

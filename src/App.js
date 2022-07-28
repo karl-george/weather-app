@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import Forecast from './Components/Forecast';
+import Loading from './Components/Loading';
 import './App.css';
 
 function App() {
-  const [lat, setLat] = useState();
-  const [long, setLong] = useState();
-  const [data, setData] = useState();
+  const [lat, setLat] = useState([]);
+  const [long, setLong] = useState([]);
+  const [data, setData] = useState([]);
 
   const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_API_KEY}`;
 
@@ -24,14 +25,14 @@ function App() {
     fetchData();
   }, [lat, long]);
 
-  console.log(data);
-
   return (
     <div className='App'>
-      {typeof data !== 'undefined' ? (
-        <Forecast weather={data} />
+      {typeof data.current != 'undefined' ? (
+        <Forecast weatherData={data} />
       ) : (
-        <div>Loading...</div>
+        <div className='default'>
+          <Loading />
+        </div>
       )}
     </div>
   );

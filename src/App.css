@@ -1,3 +1,10 @@
+
+/* Typography */
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -15,7 +22,7 @@
 }
 
 .hero {
-  height: 50%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +36,12 @@
 }
 
 .hero-date {
-  color: #fff;
+  color: rgb(227, 227, 227);
+  padding: 6rem 6rem 0;
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0;
+  max-width: 550px;
 }
 
 .rain {
