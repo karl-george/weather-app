@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .bg {
@@ -17,13 +19,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 5.4rem 4.5rem;
 }
 
 .bg-hero {
-  width: 97%;
+  width: 99%;
   height: 100%;
   border-radius: 30px;
+}
+
+.hero-date {
+  color: #fff;
 }
 
 .rain {
