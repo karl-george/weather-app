@@ -1,1 +1,32 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  width: 90vw;
+  height: 90vh;
+  background-color: #9895DA;
+  border-radius: 30px;
+  margin-top: 4rem;
+}
+
+.hero {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.bg-hero {
+  width: 97%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.rain {
+  background: url("https://images.unsplash.com/photo-1562781105-c53c27ff6007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80") no-repeat center;
+}
 

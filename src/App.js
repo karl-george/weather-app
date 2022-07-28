@@ -28,7 +28,11 @@ function App() {
 
   return (
     <div className='App'>
-      {typeof data !== 'undefined' ? <Forecast /> : <div>Loading...</div>}
+      {typeof data !== 'undefined' ? (
+        <Forecast weather={data} />
+      ) : (
+        <div>Loading...</div>
+      )}
     </div>
   );
 }
