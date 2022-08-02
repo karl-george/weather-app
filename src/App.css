@@ -21,6 +21,16 @@ p {
   font-size: 2rem;
 }
 
+/* Grids + Containers */
+.grid {
+  display: grid;
+}
+
+.grid--3x5 {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -38,7 +48,7 @@ p {
 /* Hero */
 
 .hero {
-  padding: 3rem 8rem;
+  padding: 3rem 4rem;
   text-align: center;
 }
 
@@ -76,7 +86,16 @@ p {
 
 .current-min-max {
   font-size: 2.5rem;
-  margin-top: 1rem;
+  margin: 1rem 0 5rem;
+}
+
+.divider {
+  border-top: 1px solid #8FA9F9;
 }
 
 /* Weekly Forecast */
+
+.weekly-container {
+  padding: 3rem 4rem;
+  text-align: center;
+}

@@ -8,7 +8,6 @@ const Hero = ({ weatherData }) => {
   const weatherMin = Math.round(weatherData.daily[0].temp.min);
   const weatherMax = Math.round(weatherData.daily[0].temp.max);
 
-  console.log(weatherMin);
   return (
     <div className='hero'>
       <div className='hero-date'>
@@ -20,9 +19,10 @@ const Hero = ({ weatherData }) => {
         <img src={currentWeatherIcon}></img>
       </div>
       <p className='current-weather-desc'>{weatherDesc}</p>
-      <p class='current-min-max'>
+      <p className='current-min-max'>
         {weatherMin}° / {weatherMax}°
       </p>
+      <div className='divider'></div>
     </div>
   );
 };

@@ -1,10 +1,12 @@
 import React from 'react';
 import Hero from './Hero';
+import Weekly from './Weekly';
 
 const Forecast = ({ weatherData }) => {
   return (
     <div className='bg'>
       <Hero weatherData={weatherData} />
+      <Weekly weatherData={weatherData} />
     </div>
   );
 };
