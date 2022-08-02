@@ -5,46 +5,56 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 4rem auto 0;
+  color: rgb(227, 227, 227);
 }
 
 .bg {
-  width: 90vw;
-  height: 90vh;
-  background-color: #9895DA;
+  background: rgb(115,147,247);
+  background: linear-gradient(180deg, rgba(115,147,247,1) 0%, rgba(187,203,253,1) 100%);
   border-radius: 30px;
-  margin-top: 4rem;
 }
+
+/* Hero */
 
 .hero {
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5.4rem 4.5rem;
-}
-
-.bg-hero {
-  width: 99%;
-  height: 100%;
-  border-radius: 30px;
+  padding: 3rem;
+  text-align: center;
 }
 
 .hero-date {
-  color: rgb(227, 227, 227);
-  padding: 6rem 6rem 0;
-  font-weight: 500;
-  font-size: 3rem;
-  margin: 0;
-  max-width: 550px;
+  margin-top: 4rem;
 }
 
-.rain {
-  background: url("https://images.unsplash.com/photo-1562781105-c53c27ff6007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80") no-repeat center;
+.hero-date h3 {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 3.2rem;
 }
+
+.hero-temp {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
 

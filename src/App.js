@@ -8,7 +8,7 @@ function App() {
   const [long, setLong] = useState([]);
   const [data, setData] = useState([]);
 
-  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_API_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,12 +25,14 @@ function App() {
     fetchData();
   }, [lat, long]);
 
+  console.log(data);
+
   return (
     <div className='App'>
       {typeof data.current != 'undefined' ? (
         <Forecast weatherData={data} />
       ) : (
-        <div className='default'>
+        <div>
           <Loading />
         </div>
       )}
