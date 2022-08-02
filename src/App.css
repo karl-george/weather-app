@@ -26,8 +26,7 @@ p {
   display: grid;
 }
 
-.grid--3x5 {
-  grid-template-rows: repeat(3, 1fr);
+.grid--1x5 {
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -48,7 +47,7 @@ p {
 /* Hero */
 
 .hero {
-  padding: 3rem 4rem;
+  padding: 3rem 4rem 0;
   text-align: center;
 }
 
@@ -90,12 +89,20 @@ p {
 }
 
 .divider {
-  border-top: 1px solid #8FA9F9;
+  border-top: 1.5px solid #96b0fd;
 }
 
 /* Weekly Forecast */
 
 .weekly-container {
-  padding: 3rem 4rem;
+  padding: 3rem 2rem;
   text-align: center;
+}
+
+.weekly-icon {
+  max-width: 70px;
+}
+
+.weekly-elements {
+  margin-bottom: 3rem;
 }

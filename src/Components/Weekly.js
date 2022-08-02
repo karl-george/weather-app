@@ -15,17 +15,23 @@ const Weekly = ({ weatherData }) => {
 
   const weeklyElements = futureWeather.map((item) => {
     return (
-      <div key={item.dt}>
+      <div className='weekly-elements' key={item.dt}>
         <p>{calculateDate(item)}</p>
-        <p>img</p>
-        <p>temp</p>
+        <img
+          src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
+          className='weekly-icon'
+        ></img>
+        <p>{Math.round(item.temp.day)}°</p>
       </div>
     );
   });
 
+  console.log(weatherData);
+
   return (
     <div className='weekly-container'>
-      <div className='grid grid--3x5'>{weeklyElements}</div>
+      <div className='grid grid--1x5'>{weeklyElements}</div>
+      <div className='divider'></div>
     </div>
   );
 };
