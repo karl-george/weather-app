@@ -25,7 +25,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem auto 0;
+  margin: auto 0;
   color: rgb(227, 227, 227);
 }
 
@@ -38,7 +38,7 @@ p {
 /* Hero */
 
 .hero {
-  padding: 3rem;
+  padding: 3rem 8rem;
   text-align: center;
 }
 
@@ -53,8 +53,30 @@ p {
 }
 
 .hero-temp {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 0;
 }
 
+.current-weather-icon {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
 
+.current-weather-desc {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.current-weather-desc::first-letter {
+  text-transform: capitalize;
+}
+
+.current-min-max {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+/* Weekly Forecast */
