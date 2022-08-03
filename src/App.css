@@ -32,6 +32,11 @@ p {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 .container {
   padding: 3rem 2rem;
   text-align: center;
@@ -111,3 +116,7 @@ p {
 }
 
 /* Current Details */
+.detail-block {
+  background-color: #a2b5f0;
+  border-radius: 20px;
+}
