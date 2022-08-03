@@ -42,6 +42,10 @@ p {
   text-align: center;
 }
 
+.container .short {
+  padding: 1rem 2rem;
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -62,34 +66,34 @@ p {
 /* Hero */
 
 .hero {
-  padding: 3rem 4rem 0;
+  padding: 1rem 4rem 0;
 }
 
 .hero-date {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .hero-date h3 {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   font-size: 3.2rem;
 }
 
 .hero-temp {
   font-size: 8rem;
   font-weight: bold;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 0;
 }
 
 .current-weather-icon {
-  margin-top: 1rem;
+  margin-top: -4rem;
   margin-bottom: 0;
 }
 
 .current-weather-desc {
   font-size: 4rem;
   font-weight: bold;
-  margin: 0;
+  margin: -3rem 0 0;
 }
 
 .current-weather-desc::first-letter {
@@ -98,11 +102,12 @@ p {
 
 .current-min-max {
   font-size: 2.5rem;
-  margin: 1rem 0 5rem;
+  margin: 1rem 0 3rem;
 }
 
 .divider {
-  border-top: 1.5px solid #89a6fd;
+  border-top: 1.5px solid #7497ff;
+  margin-bottom: 0;
 }
 
 /* Weekly Forecast */
@@ -112,7 +117,16 @@ p {
 }
 
 .weekly-elements {
-  margin-bottom: 3rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.weekly-elements p {
+  margin: 0.5rem 0;
+}
+
+.weekly-elements img {
+  margin-bottom: -1rem;
 }
 
 /* Current Details */

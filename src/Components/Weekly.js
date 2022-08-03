@@ -22,7 +22,7 @@ const Weekly = ({ weatherData }) => {
   });
 
   return (
-    <div className='container'>
+    <div className='container short'>
       <div className='grid grid--1x5'>{weeklyElements}</div>
       <div className='divider'></div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Details from './Details';
+import Footer from './Footer';
 import Hero from './Hero';
 import Weekly from './Weekly';
 
@@ -9,6 +10,7 @@ const Forecast = ({ weatherData }) => {
       <Hero weatherData={weatherData} />
       <Weekly weatherData={weatherData} />
       <Details weatherData={weatherData} />
+      <Footer />
     </div>
   );
 };
