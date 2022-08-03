@@ -1,4 +1,4 @@
-import { calculateTime } from './utils/utils';
+import moment from 'moment';
 
 const Details = ({ weatherData }) => {
   // console.log(weatherData);
@@ -6,12 +6,10 @@ const Details = ({ weatherData }) => {
   return (
     <div>
       <p>
-        {console.log(
-          calculateTime(
-            weatherData.current.sunrise,
-            weatherData.timezone_offset
-          )
-        )}
+        {moment
+          .unix(weatherData.current.sunrise)
+          .format('h:mm a')
+          .toUpperCase()}
       </p>
     </div>
   );

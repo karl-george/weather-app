@@ -1,5 +1,4 @@
-import { calculateDay } from './utils/utils';
-
+import moment from 'moment';
 
 const Weekly = ({ weatherData }) => {
   const futureWeather = [];
@@ -12,7 +11,7 @@ const Weekly = ({ weatherData }) => {
   const weeklyElements = futureWeather.map((item) => {
     return (
       <div className='weekly-elements' key={item.dt}>
-        <p>{calculateDay(item, weatherData.timezone_offset)}</p>
+        <p>{moment.unix(item.dt).format('ddd')}</p>
         <img
           src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
           className='weekly-icon'
