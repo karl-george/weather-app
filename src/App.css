@@ -46,6 +46,18 @@ p {
   padding: 1rem 2rem;
 }
 
+@media screen and (max-width: 380px) {
+  /* Keep centered at extremely low resolution */
+  .container {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .container .short {
+    padding: 1rem 0;
+  }
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -117,7 +129,7 @@ p {
 }
 
 .weekly-elements {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -134,6 +146,7 @@ p {
   background-color: #a2b5f0;
   border-radius: 20px;
   margin-bottom: 2rem;
+  border: 1px solid #8ba7fad1;
 }
 
 .icon {

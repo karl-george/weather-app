@@ -22,7 +22,6 @@ const Hero = ({ weatherData }) => {
       <p className='current-min-max'>
         {weatherMin}&deg; / {weatherMax}&deg;
       </p>
-      <div className='divider'></div>
     </div>
   );
 };
