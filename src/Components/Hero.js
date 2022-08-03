@@ -14,13 +14,13 @@ const Hero = ({ weatherData }) => {
         <h2>{date.toLocaleDateString('en-GB', dateOptions)}</h2>
         <h3>{date.toLocaleTimeString([], timeOptions)}</h3>
       </div>
-      <p className='hero-temp'>{weatherTemp}°</p>
+      <p className='hero-temp'>{weatherTemp}&deg;</p>
       <div className='current-weather-icon'>
         <img src={currentWeatherIcon}></img>
       </div>
       <p className='current-weather-desc'>{weatherDesc}</p>
       <p className='current-min-max'>
-        {weatherMin}° / {weatherMax}°
+        {weatherMin}&deg; / {weatherMax}&deg;
       </p>
       <div className='divider'></div>
     </div>
