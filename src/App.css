@@ -102,7 +102,7 @@ p {
 }
 
 .divider {
-  border-top: 1.5px solid #96b0fd;
+  border-top: 1.5px solid #89a6fd;
 }
 
 /* Weekly Forecast */
@@ -119,4 +119,10 @@ p {
 .detail-block {
   background-color: #a2b5f0;
   border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 3.5rem;
+  padding: 2.5rem 0;
 }

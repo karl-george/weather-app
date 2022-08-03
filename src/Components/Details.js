@@ -27,6 +27,18 @@ const Details = ({ weatherData }) => {
           </p>
         </div>
       </div>
+      <div className='grid grid--1x2'>
+        <div className='detail-block'>
+          <i className='fa-solid fa-sun icon'></i>
+          <h4>UV Index</h4>
+          <p>{weatherData.current.uvi}</p>
+        </div>
+        <div className='detail-block'>
+          <i className='fa-solid fa-wind icon'></i>
+          <h4>Wind</h4>
+          <p>{weatherData.current.wind_speed} mph</p>
+        </div>
+      </div>
     </div>
   );
 };
