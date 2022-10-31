@@ -11,11 +11,11 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage" : "https://karl-george.github.io/weather-app/"
+    "homepage" : "http://karl-george.github.io/weather-app/"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rm -rf docs && mv build docs",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
     "test": "react-scripts test",
